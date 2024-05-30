@@ -1,7 +1,7 @@
 services:
   backend:
     container_name: mydigitalhub-backend
-    image: ghcr.io/my-digital-school-nantes/mds-mydigitalhub-backend:master
+    image: ghcr.io/mlucas44/mds-mydigitalhub-backend:master
     restart: unless-stopped
     environment:
       DATABASE_CLIENT: mysql
@@ -48,7 +48,7 @@ services:
       - public-network  
 
   frontend:
-    image: ghcr.io/my-digital-school-nantes/mds-mydigitalhub-frontend:master
+    image: ghcr.io/mlucas44/mds-mydigitalhub-frontend:master
     ports:
       - 3000:3000
     container_name: mydigitalhub-frontend
